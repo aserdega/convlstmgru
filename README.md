@@ -33,6 +33,6 @@ output, encoder_state = conv_lstm_encoder(input, hidden)
 # Other
 - train_gru_predictor.py and train_lstm_predictor.py: train video prediction models based on ConvGru and ConvLSTM respectively
 - cnn.py: file that contains simple convolutional networks for encoding and decoding frames representations
-- bouncing_mnist.py: contains dataloader that generates moving MNIST dataset from plain MNIST on a fly (requires file)
+- bouncing_mnist.py: contains dataloader that generates moving MNIST dataset from plain MNIST on a fly: [this](https://www.dropbox.com/s/xt93tn9cstf85w1/mnist.h5?dl=0)
 - generate_test_set.py: used to generate testing data for trained models
 - test.py: contains tester for trained models
