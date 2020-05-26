@@ -1,3 +1,5 @@
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/8dd11ea5f7ea4e19b66f2c6072e97252)](https://www.codacy.com/manual/andriyserdega/convlstmgru?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=aserdega/convlstmgru&amp;utm_campaign=Badge_Grade)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 # ConvLSTM and ConvGRU | Pytorch
 **Implementation of ConvolutionalLSTM and ConvolutonalGRU in PyTorch**
 
