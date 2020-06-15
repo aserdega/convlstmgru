@@ -41,4 +41,5 @@ output, encoder_state = conv_lstm_encoder(input, hidden)
 
 ## Prediction examples
 For every 3 rows, 1st represent previous frames that are fed to the model, 2nd represent predicted frames and 3rd represent GT future frames:
+
 ![Predictions](example.png)
