@@ -28,13 +28,17 @@ hidden = conv_lstm_encoder.get_init_states(batch_size)
 output, encoder_state = conv_lstm_encoder(input, hidden)
 ```
 
-## Project Structure
-# Main Files
+# Project Structure
+## Main Files
 - convlstm.py: contains main classes for ConvLSTMCell(represents one "layer") and ConvLSTM modules
 - convgru.py : same as for convlstm
-# Other
+## Other
 - train_gru_predictor.py and train_lstm_predictor.py: train video prediction models based on ConvGru and ConvLSTM respectively
 - cnn.py: file that contains simple convolutional networks for encoding and decoding frames representations
 - bouncing_mnist.py: contains dataloader that generates moving MNIST dataset from plain MNIST on a fly, use [this](https://www.dropbox.com/s/xt93tn9cstf85w1/mnist.h5?dl=0) raw MNIST dataset for reproducing the experiments.
 - generate_test_set.py: used to generate testing data for trained models
 - test.py: contains tester for trained models
+
+## Prediction examples
+Every odd row repersents input frames, every even row represent predicted frames based on input ones:
+![Predictions](example.png)
