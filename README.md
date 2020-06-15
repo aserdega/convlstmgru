@@ -40,5 +40,5 @@ output, encoder_state = conv_lstm_encoder(input, hidden)
 - test.py: contains tester for trained models
 
 ## Prediction examples
-Every odd row repersents input frames, every even row represent predicted frames based on input ones:
+For every 3 rows, 1st represent previous frames that are fed to the model, 2nd represent predicted frames and 3rd represent GT future frames:
 ![Predictions](example.png)
