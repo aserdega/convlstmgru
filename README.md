@@ -8,9 +8,9 @@ Inspired by [this](https://github.com/ndrplz/ConvLSTM_pytorch) repository but ha
 ## How to Use
 The `ConvLSTM` and `ConvGRU` modules are inherited from `torch.nn.Module`.
 
-The ConvLSTM and ConvGRU allow using any number of layers. In this case, it can be specified the hidden dimension (that is, the number of channels) and the kernel size of each layer. In the case more layers are present but a single value is provided, this is replicated for all the layers. For example, in the following snippet each of the three layers has a different hidden dimension but the same kernel size.
+ConvLSTM and ConvGRU wrappers allow using arbitrary number of layers. You can specify size of hidden dimension (number of channels) and the kernel size for each layer. In case of multiple layers and single kernel size it is being replicated for all the layers. For example, in the following snippet each of the three layers has same kernel size for each layer.
 
-Short code snippet of usage
+Short usage expample:
 ```
 conv_lstm_encoder = ConvLSTM(
                    input_size=(hidden_spt,hidden_spt),
