@@ -10,7 +10,7 @@ The `ConvLSTM` and `ConvGRU` modules are inherited from `torch.nn.Module`.
 
 ConvLSTM and ConvGRU wrappers allow using arbitrary number of layers. You can specify size of hidden dimension (number of channels) and the kernel size for each layer. In case of multiple layers and single kernel size it is being replicated for all the layers. For example, in the following snippet each of the three layers has same kernel size for each layer.
 
-Short usage expample:
+Short usage example:
 ```
 conv_lstm_encoder = ConvLSTM(
                    input_size=(hidden_spt,hidden_spt),
