@@ -27,7 +27,7 @@ class MovingMnistTestSetGenerator():
       print('Please set the correct path to MNIST dataset')
       sys.exit()
 
-    self.data_ = f['test'].value.reshape(-1, 28, 28)
+    self.data_ = f['test'][()].reshape(-1, 28, 28)
 
     f.close()
 
