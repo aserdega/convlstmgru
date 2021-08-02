@@ -27,8 +27,8 @@ class BouncingMnist():
       print('Please set the correct path to MNIST dataset')
       sys.exit()
 
-    self.data_ = f['train'].value.reshape(-1, 28, 28)
-    #self.test = f['test'].value.reshape(-1, 28, 28)
+    self.data_ = f['train'][()].reshape(-1, 28, 28)
+    #self.test = f['test'][()].reshape(-1, 28, 28)
 
     f.close()
     self.indices_ = np.arange(self.data_.shape[0])
